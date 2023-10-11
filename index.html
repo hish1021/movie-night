@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Firebase library -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="netflix-title">Movie<span class="animated-text">Night</span></h1>
+    </div>
+    <div id="login-container">
+        <h2>Let's Begin!</h2>
+        <input type="text" id="username-input" placeholder="Enter your username">
+        <button id="login-button">Start Game</button>
+    </div>
+
+    <div id="genre-selection" style="display: none;">
+        <h2>Select a Genre</h2>
+        <button class="genre-button" data-genre="Comedy">Comedy</button>
+        <button class="genre-button" data-genre="Action">Action</button>
+        <button class="genre-button" data-genre="Horror">Horror</button>
+        <button class="genre-button" data-genre="Scifi">Sci-Fi</button>
+        <button class="genre-button" data-genre="Romance">Romance</button>
+        <button class="genre-button" data-genre="Thriller">Thriller</button>
+    </div>
+
+    <div id="score-container">
+        <span id="score">Score: 0</span>
+    </div>
+    <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="options">
+            <!-- Dynamically created options -->
+        </div>
+        <div id="timer"> <span id="time">10</span> </div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <audio id="background-music" loop>
+        <source src="gametheme.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
