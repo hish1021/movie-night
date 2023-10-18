@@ -141,3 +141,38 @@ h2 {
   background-color: #FF4500;
 }
 
+/* Style for leaderboard button */
+#leaderboard-button {
+  background-color: #e50914; /* Red color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for leaderboard button */
+#leaderboard-button:hover {
+  background-color: #a2050e; /* Darker shade of red */
+}
+
+/* Style for play again button */
+#play-again-button {
+  background-color: #007BFF; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for play again button */
+#play-again-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
